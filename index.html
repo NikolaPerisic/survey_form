@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<div id="form-outer">
+	<p id="description">Made Villa Bali Guest Survey Form</p>
+	<form id="survey-form">
+		<div class="rowTab">
+			<div class="labels">
+				<label id="name-label" for="name">* Name:</label>
+			</div>
+			<div class="rightTab">
+				<input autofocus type="text" name="name" id="name" class="input-field" placeholder="Your Name" required="">
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="email" id="email-label">* Email:</label>
+			</div>
+			<div class="rightTab">
+				<input type="email" name="email" id="email" class="input-field" required placeholder="Enter Your Email">
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label id="number-label" for="age">* Age: </label>
+			</div>
+			<div class="rightTab">
+				<input type="number" name="age" id="number" min="1" max="150" class="input-field" placeholder="Age">
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="favorite-location">What is your favorite area on the island?</label>
+			</div>
+			<div class="rightTab">
+				<select id="dropdown" name="favorite-location" class="dropdown">
+					<option disabled selected value>Select an option</option>
+					<option value="Kuta">Kuta</option>
+					<option value="Ubud">Ubud</option>
+					<option value="Badung">Badung</option>
+					<option value="Bangli">Bangli</option>
+					<option value="Karangasem">Karangasem</option>
+					<option value="Tabanan">Tabanan</option>
+					<option value="Buleleng">Buleleng</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="userRating">* How likely would you reccomend Made Villa Bali to a friend?</label>
+			</div>
+			<div class="rightTab">
+				<ul style="list-style: none;">
+					<li class="radio">
+						<label>"Definitely"<input type="radio" name="radio-buttons" class="userRatings" value="1"></label>
+					</li>
+					<li class="radio">
+						<label>"Maybe"<input type="radio" name="radio-buttons" class="userRatings" value="2"></label>
+					</li>
+					<li class="radio">
+						<label>"Not Sure"<input type="radio" name="radio-buttons" class="userRatings" value="3"></label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="most-like">Your favorite activity during your stay:</label>
+			</div>
+			<div class="rightTab">
+				<select id="most-like" name="mostLike" class="dropdown">
+					<option disabled selected value>Select an option</option>
+					<option value="Diving">Diving</option>
+					<option value="Surfing">Surfing</option>
+					<option value="Temple Visit">Temple Visit</option>
+					<option value="Climbing Mt Batur">Climbing Mt Batur</option>
+					<option value="Cultural Tours">Cultural Tours</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="preferences">Things that we could improve in the future<br>
+				(Check all that apply):</label>
+			</div>
+			<div class="rightTab">
+				<ul id="preferences" style="list-style: none;">
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="1" class="userRatings">Sleeping Comfort</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="2" class="userRatings">Quality of breakfast</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="3" class="userRatings">Cleanliness</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="4" class="userRatings">Reservations</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="5" class="userRatings">Amenities and decor</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="6" class="userRatings">Responsiveness</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="7" class="userRatings">Resort maintenance</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="8" class="userRatings">Atmosphere</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="9" class="userRatings">Lightning in guest rooms</label></li>
+					<li class="checkbox"><label>
+						<input type="checkbox" name="prefer" value="10" class="userRatings">Knowledge about local area</label></li>
+				</ul>
+			</div>
+		</div>
+		<div class="rowTab">
+			<div class="labels">
+				<label for="comments">Your comments and suggestions?</label>
+			</div>
+			<div class="rightTab">
+				<textarea id="comments" class="input-field" style="height: 50px;resize: vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+			</div>
+		</div>
+		<button class="submit" type="submit" id="submit">Submit</button>
+	</form>
+</div>
+</body>
+</html>
